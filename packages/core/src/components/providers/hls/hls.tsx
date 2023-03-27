@@ -210,7 +210,7 @@ export class HLS implements MediaFileProvider {
   }
 
   private levelToPlaybackQuality(level: any) {
-    return level === -1 ? 'Auto' : `${level.bitrate}p`;
+    return level === -1 ? 'Auto' : `${level.bitrate}`;
   }
 
   private findLevelIndexFromQuality(quality: PlayerProps['playbackQuality']) {
